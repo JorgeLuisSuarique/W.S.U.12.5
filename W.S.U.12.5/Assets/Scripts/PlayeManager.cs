@@ -22,6 +22,7 @@ public class PlayeManager : MonoBehaviour
     {
 		
 	}
+    
 
     void FixedUpdate()
     {
@@ -45,5 +46,11 @@ public class PlayeManager : MonoBehaviour
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
+    }
+
+    void OnBecameInvisible()
+    {
+        transform.position = new Vector2(-1, 0);
+        Debug.Log("e vuelto");
     }
 }

@@ -1,0 +1,801 @@
+fileFormatVersion: 2
+guid: eab91d5696729b24c87e90736cfadd55
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gangsterNivel1_0
+    21300002: gangsterNivel1_1
+    21300004: gangsterNivel1_2
+    21300006: gangsterNivel1_3
+    21300008: gangsterNivel1_4
+    21300010: gangsterNivel1_5
+    21300012: gangsterNivel1_6
+    21300014: gangsterNivel1_7
+    21300016: gangsterNivel1_8
+    21300018: gangsterNivel1_9
+    21300020: gangsterNivel1_10
+    21300022: gangsterNivel1_11
+    21300024: gangsterNivel1_12
+    21300026: gangsterNivel1_13
+    21300028: gangsterNivel1_14
+    21300030: gangsterNivel1_15
+    21300032: gangsterNivel1_16
+    21300034: gangsterNivel1_17
+    21300036: gangsterNivel1_18
+    21300038: gangsterNivel1_19
+    21300040: gangsterNivel1_20
+    21300042: gangsterNivel1_21
+    21300044: gangsterNivel1_22
+    21300046: gangsterNivel1_23
+    21300048: gangsterNivel1_24
+    21300050: gangsterNivel1_25
+    21300052: gangsterNivel1_26
+    21300054: gangsterNivel1_27
+    21300056: gangsterNivel1_28
+    21300058: gangsterNivel1_29
+    21300060: gangsterNivel1_30
+    21300062: gangsterNivel1_31
+    21300064: gangsterNivel1_32
+    21300066: gangsterNivel1_33
+    21300068: gangsterNivel1_34
+    21300070: gangsterNivel1_35
+    21300072: gangsterNivel1_36
+    21300074: gangsterNivel1_37
+    21300076: gangsterNivel1_38
+    21300078: gangsterNivel1_39
+    21300080: gangsterNivel1_40
+    21300082: gangsterNivel1_41
+    21300084: gangsterNivel1_42
+    21300086: gangsterNivel1_43
+    21300088: gangsterNivel1_44
+    21300090: gangsterNivel1_45
+    21300092: gangsterNivel1_46
+    21300094: gangsterNivel1_47
+    21300096: gangsterNivel1_48
+    21300098: gangsterNivel1_49
+    21300100: gangsterNivel1_50
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gangsterNivel1_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 690
+        width: 73
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ac478229cd2224c8a74e9650a6f891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 690
+        width: 89
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f66be61535ee794aacf431afa4f4d39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_4
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 688
+        width: 87
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b714dc2efe03247b51b9001fd36fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 689
+        width: 77
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ca266216d7a6140ac1297b31efd6c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 579
+        width: 72
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a226b69e22d5d348ad3bf0f2c61273a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 579
+        width: 57
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903afc5814adaab4f903ef817c0dd589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_10
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 579
+        width: 89
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b8b99ad11350a4295d2f8d59c04d52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 579
+        width: 91
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1459f6710cd688146881e104f8087440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 471
+        width: 72
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc8a366b8a4b4549894c23d174fdc25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 470
+        width: 84
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba2b09b32c79f4a95bb0c1fe736580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 466
+        width: 82
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcca58644c2b489459482c6cce2a22eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_15
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 446
+        width: 76
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c25438b2a85a5446af85781fdc3f0d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_16
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 465
+        width: 78
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a7d6fb4a1eef842af1e9cb5c18fc85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 459
+        width: 75
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09cf58807822084a9ab5b96f0ea0814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 363
+        width: 77
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d6dcd5381af994ea39a7a2c25442bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 361
+        width: 75
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993570f70e81b5941898f90a39f92cdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_22
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 361
+        width: 73
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cba4a6588e61204b8394a88f2f43f07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_23
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 361
+        width: 82
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4242d9d7562bc24b9a0b3f811174136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_26
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 242
+        width: 76
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9616e4ddc0e3d894da9437c4e0cf43c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_28
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 234
+        width: 88
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e8e798d87516049adcdb185f0fe349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_29
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 239
+        width: 74
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93172a46fb7365439d44c1b5fa2f75b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_30
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 256
+        width: 85
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea3216ef087fd41b92e4a2431c8f0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_31
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 257
+        width: 79
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c0353c3694c6c44a56400c36bd8aa1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 115
+        width: 66
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6194fef234228e469363b80b501fb50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_37
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 118
+        width: 71
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059a7c2fc0c6e5748b5fd5e0c86c45e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_39
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 126
+        width: 95
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eed5f56cb5a314a86ba3718069d1af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_40
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 134
+        width: 101
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dd47cf60dec1d4ea3459564c80b10f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_41
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 132
+        width: 104
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992b631cd16575b47a4f269664885828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_44
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 38
+        width: 111
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcac4ff22e347a044aaaf50b14098d3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 42
+        width: 103
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112532af742f3934da65dc3b59e8162d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_47
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 42
+        width: 103
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f489e56814280d047b95daf6e86f4cb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gangsterNivel1_48
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 47
+        width: 104
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2926df0327635ff4cb6a0b72bd6e4f12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1a1acd94c6c3d8b43beae3f780c66936
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
