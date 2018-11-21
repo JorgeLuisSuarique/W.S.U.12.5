@@ -7,6 +7,8 @@ public class PlayeManager : MonoBehaviour
     public float maxSpeed = 5f;
     public float speed = 2f;
     public bool grounded;
+    public Transform blasterSpawner;
+    public GameObject blasPrefab;
 
     private Rigidbody2D rb2d;
     private bool movement = true;
@@ -20,9 +22,15 @@ public class PlayeManager : MonoBehaviour
 	
 	void Update ()
     {
-		
+        Fire();
 	}
-    
+    public void Fire()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Instantiate(blasPrefab, blasterSpawner.position, blasterSpawner.rotation);
+        }
+    }
 
     void FixedUpdate()
     {
@@ -52,6 +60,5 @@ public class PlayeManager : MonoBehaviour
     void OnBecameInvisible()
     {
         transform.position = new Vector2(-1, 1);
-        Debug.Log("he vuelto");
     }
 }
