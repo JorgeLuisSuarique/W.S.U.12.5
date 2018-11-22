@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+W.S.U.12.5/Assets/Prefabs.meta
+W.S.U.12.5/Assets/Scenes/Game.unity
+*.unity
