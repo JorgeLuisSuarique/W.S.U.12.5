@@ -311,7 +311,7 @@ TextureImporter:
         serializedVersion: 2
         x: 49
         y: 9
-        width: 72
+        width: 71
         height: 91
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -332,7 +332,7 @@ TextureImporter:
         x: 122
         y: 8
         width: 84
-        height: 102
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,9 +349,9 @@ TextureImporter:
       name: gangsterNivel1_14
       rect:
         serializedVersion: 2
-        x: 208
+        x: 211
         y: 4
-        width: 84
+        width: 81
         height: 96
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -389,10 +389,10 @@ TextureImporter:
       name: gangsterNivel1_16
       rect:
         serializedVersion: 2
-        x: 385
+        x: 386
         y: 3
-        width: 88
-        height: 107
+        width: 77
+        height: 97
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
