@@ -293,8 +293,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  speed: 5
+  speed: 4
   target: {fileID: 1461955922}
+  the: {x: 0, y: 0, z: 0}
+  end: {x: 0, y: 0, z: 0}
+  isRight: 0
 --- !u!114 &7184089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,8 +1255,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461955921}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.38, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7184082}

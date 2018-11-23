@@ -8,9 +8,10 @@ public class EnemyManager : MonoBehaviour
     public float speed = 1f;
     public Transform target;
 
-    private Vector3 the, end;
+    public Vector3 the, end;
     private Rigidbody2D rb2d;
     private Animator anim;
+    public bool isRight;
 
     void Start()
     {
@@ -25,24 +26,9 @@ public class EnemyManager : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        rb2d.AddForce(Vector2.right * speed);
-        float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
-        rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
-        if (rb2d.velocity.x > -0.01f && rb2d.velocity.x < 0.01f)
-        {
-            speed = -speed;
-            rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
-        }
-        if (speed < 0)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if (speed > 0)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
+        /*
         if (target != null)
         {
             float fixedSpeed = speed * Time.deltaTime;
@@ -52,7 +38,26 @@ public class EnemyManager : MonoBehaviour
         {
             target.position = (target.position == the) ? end : the;
         }
+        */
 
+        if(isRight)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            transform.Translate((Vector3.right * speed) * Time.deltaTime);
+            if(transform.position.x >= the.x)
+            {
+                isRight = false;
+            }
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            transform.Translate((Vector3.left * speed) * Time.deltaTime);
+            if(transform.position.x <= target.position.x)
+            {
+                isRight = true;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
