@@ -884,7 +884,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.11974903, g: 0.4094914, b: 0.6509434, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1462,7 +1462,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1724834435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 0.56999993, z: 0}
+  m_LocalPosition: {x: 0, y: 0.42, z: 0}
   m_LocalScale: {x: 2.2881346, y: 2.0390587, z: 1}
   m_Children:
   - {fileID: 555847375}
@@ -1576,9 +1576,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   speed: 10
+  pushPower: 15
   grounded: 0
   blasterSpawner: {fileID: 74627785}
   blasPrefab: {fileID: 1395571040451488, guid: 744e8eacca40b7147b79d7ffe837cb50, type: 2}
+  pushMax: 0
+  min: {x: 0, y: 0.42}
+  max: {x: 0, y: 7}
 --- !u!58 &1724834443
 CircleCollider2D:
   m_ObjectHideFlags: 0
