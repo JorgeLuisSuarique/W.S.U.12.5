@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GunsMove : MonoBehaviour
 {
     float mouseY;
     public GameObject cuerpo;
+
     void Update()
     {  
       mouseY += Input.GetAxis("Mouse Y");

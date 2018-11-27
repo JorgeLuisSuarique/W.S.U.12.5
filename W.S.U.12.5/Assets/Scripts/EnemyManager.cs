@@ -6,6 +6,8 @@ public class EnemyManager : MonoBehaviour
 {
     public float maxSpeed = 1f;
     public float speed = 1f;
+    public float rango;
+    public float Vel;
     public Transform target;
 
     public Vector3 the, end;
@@ -28,17 +30,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (target != null)
-        {
-            float fixedSpeed = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.position, fixedSpeed);
-        }
-        if (transform.position == target.position)
-        {
-            target.position = (target.position == the) ? end : the;
-        }
-        */
+       
 
         if(isRight)
         {

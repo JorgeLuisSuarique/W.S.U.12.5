@@ -29,24 +29,19 @@ public class BulletMov : MonoBehaviour
             bullRb2d.velocity = new Vector2(-bullSpeed, bullRb2d.velocity.y);
             transform.localScale = new Vector3(-1, 1, 1);
         }
-    }
-
-    void Update()
-    {
-
-
+        Destroy(gameObject, bullLife);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Enemy")
+        if (coll.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
             // Debug.Log("problema");
         }
         else
         {
-            Destroy(gameObject, bullLife);
+            
         }
 
     }

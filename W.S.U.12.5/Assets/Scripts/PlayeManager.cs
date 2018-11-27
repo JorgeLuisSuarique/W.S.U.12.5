@@ -6,30 +6,26 @@ public class PlayeManager : MonoBehaviour
 {
     public float maxSpeed = 5f;
     public float speed = 2f;
-    public float pushPower = 0f;
     public bool grounded;
     public Transform blasterSpawner;
     public GameObject blasPrefab;
-    public float pushMax;
-    public Vector2 min, max;
 
+    private Animator anim;
     private Rigidbody2D rb2d;
     private bool movement = true;
-    private bool push;
 
     Vector2 mov;
 
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            push = true;
-        }
+        anim.SetFloat("rolling", Mathf.Abs(rb2d.velocity.x));
+        anim.SetBool("Grounded", grounded);
         Fire();
 	}
     public void Fire()
@@ -63,12 +59,6 @@ public class PlayeManager : MonoBehaviour
         //{
         //    transform.localScale = new Vector3(-1f, 1f, 1f);
         //}
-        if (push)
-        {
-            rb2d.AddForce(Vector2.up * pushPower, ForceMode2D.Impulse);
-            rb2d.position = new Vector2(rb2d.position.x, Mathf.Clamp(rb2d.position.y,min.y,max.y));
-            push = false;
-        }
     }
 
     void OnBecameInvisible()
