@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - BlasterDestroy
+  - Ground
   layers:
   - Default
   - TransparentFX
