@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public float maxSpeed = 1f;
     public float speed = 1f;
-    public float rango;
-    public float Vel;
+    public float rangoVicion;
+    public float rangoDisparar;
     public Transform target;
-
+    public bool isRight;
     public Vector3 the, end;
+
     private Rigidbody2D rb2d;
     private Animator anim;
-    public bool isRight;
-
+    Vector3 initialPosition;
+    GameObject player;
     void Start()
     {
         if (target != null)
@@ -23,20 +23,24 @@ public class EnemyManager : MonoBehaviour
             the = transform.position;
             end = target.position;
         }
-
+        player = GameObject.FindGameObjectWithTag("Player");
+        initialPosition = new Vector3
+        {
+            x = -62.3f,
+            y = -3.27f,
+            z = 0
+        }; //transform.position;
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void Idle()
     {
-       
-
-        if(isRight)
+        if (isRight)
         {
             transform.localScale = new Vector3(-1, 1, 1);
             transform.Translate((Vector3.right * speed) * Time.deltaTime);
-            if(transform.position.x >= the.x)
+            if (transform.position.x >= the.x)
             {
                 isRight = false;
             }
@@ -45,11 +49,69 @@ public class EnemyManager : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
             transform.Translate((Vector3.left * speed) * Time.deltaTime);
-            if(transform.position.x <= target.position.x)
+            if (transform.position.x <= target.position.x)
             {
                 isRight = true;
             }
         }
+    }
+
+    void TargetDetection()
+    {
+        Vector3 Enemy = initialPosition;
+
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, player.transform.position - transform.position, rangoVicion);
+
+        Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
+        Debug.DrawRay(transform.position, forward, Color.red);
+
+        if (hit2D.collider != null)
+        {
+            if (hit2D.collider.tag == "Player")
+            {
+                Enemy = player.transform.position;
+            }
+        }
+
+
+        float dintance = Vector3.Distance(Enemy, transform.position);
+        Vector3 direction = (Enemy - transform.position).normalized;
+        if (Enemy != initialPosition && dintance < rangoDisparar)
+        {
+            Debug.Log("disparando");
+        }
+        else
+        {
+            rb2d.MovePosition(transform.position + direction * speed * Time.deltaTime);
+        }
+
+        if (Enemy == initialPosition && dintance < 0.02f)
+        {
+            if (transform.position == initialPosition)
+            {
+                Idle();
+                Debug.Log("Idle");
+            }
+            else
+            {
+                transform.position = initialPosition;
+
+                Debug.Log("Init");
+            }
+        }
+        Debug.DrawLine(transform.position, Enemy, Color.blue);
+    }
+
+    void Update()
+    {
+        TargetDetection();
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, rangoVicion);
+        Gizmos.DrawWireSphere(transform.position, rangoDisparar);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

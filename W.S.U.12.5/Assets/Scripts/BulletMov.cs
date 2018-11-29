@@ -37,12 +37,6 @@ public class BulletMov : MonoBehaviour
         if (coll.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            // Debug.Log("problema");
         }
-        else
-        {
-            
-        }
-
     }
 }
