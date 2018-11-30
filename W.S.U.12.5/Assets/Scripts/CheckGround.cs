@@ -5,12 +5,23 @@ using UnityEngine;
 public class CheckGround : MonoBehaviour
 {
     private PlayeManager play;
+    private Rigidbody2D rb2d;
 
     void Start ()
     {
        play = GetComponentInParent<PlayeManager>();
+       rb2d = GetComponentInParent<Rigidbody2D>();
     }
 
+    private void OnCollisionEnter2D(Collision2D col2d)
+    {
+        if (col2d.gameObject.tag == "Platform")
+        {
+            rb2d.velocity = new Vector3(0f, 0f, 0f);
+            play.transform.parent = col2d.transform;
+            play.grounded = true;
+        }
+    }
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")

@@ -12,6 +12,7 @@ public class EnemyManager : MonoBehaviour
     public Vector3 the, end;
 
     public GameObject bullPrefab;
+    public Transform bullSpawner;
     public float attackSpeed = 1f;
     bool attacking;
 
@@ -124,7 +125,7 @@ public class EnemyManager : MonoBehaviour
         attacking = true;
         if (Enemy != initialPosition && bullPrefab != null)
         {
-            Instantiate(bullPrefab, transform.position, transform.rotation);
+            Instantiate(bullPrefab, bullSpawner.position, bullSpawner.rotation);
             yield return new WaitForSeconds(seconds);
         }
         attacking = false;
