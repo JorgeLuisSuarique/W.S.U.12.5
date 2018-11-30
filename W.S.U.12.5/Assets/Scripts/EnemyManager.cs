@@ -11,9 +11,13 @@ public class EnemyManager : MonoBehaviour
     public bool isRight;
     public Vector3 the, end;
 
+    public GameObject bullPrefab;
+    public float attackSpeed = 1f;
+    bool attacking;
+
     private Rigidbody2D rb2d;
     private Animator anim;
-    Vector3 initialPosition;
+    Vector3 initialPosition, Enemy;
     GameObject player;
     void Start()
     {
@@ -58,7 +62,7 @@ public class EnemyManager : MonoBehaviour
 
     void TargetDetection()
     {
-        Vector3 Enemy = initialPosition;
+        Enemy = initialPosition;
 
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, player.transform.position - transform.position, rangoVicion);
 
@@ -79,6 +83,7 @@ public class EnemyManager : MonoBehaviour
         if (Enemy != initialPosition && dintance < rangoDisparar)
         {
             Debug.Log("disparando");
+            if (!attacking)StartCoroutine(Attack(attackSpeed)) ;
         }
         else
         {
@@ -112,6 +117,17 @@ public class EnemyManager : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, rangoVicion);
         Gizmos.DrawWireSphere(transform.position, rangoDisparar);
+    }
+
+    IEnumerator Attack(float seconds)
+    {
+        attacking = true;
+        if (Enemy != initialPosition && bullPrefab != null)
+        {
+            Instantiate(bullPrefab, transform.position, transform.rotation);
+            yield return new WaitForSeconds(seconds);
+        }
+        attacking = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

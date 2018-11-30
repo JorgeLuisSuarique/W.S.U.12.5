@@ -154,7 +154,7 @@ TextureImporter:
         width: 87
         height: 91
       alignment: 9
-      pivot: {x: 0.5000002, y: -0.009535402}
+      pivot: {x: 0.8, y: 0.79}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: gangsterNivel1_3
       rect:
         serializedVersion: 2
-        x: 141
-        y: 228
+        x: 142
+        y: 227
         width: 86
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.8, y: 0.79}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,8 +193,8 @@ TextureImporter:
         y: 228
         width: 86
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.8, y: 0.79}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,8 +213,8 @@ TextureImporter:
         y: 228
         width: 86
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.8, y: 0.79}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
