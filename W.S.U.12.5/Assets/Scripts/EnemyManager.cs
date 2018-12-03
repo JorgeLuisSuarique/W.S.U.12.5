@@ -84,7 +84,9 @@ public class EnemyManager : MonoBehaviour
         if (Enemy != initialPosition && dintance < rangoDisparar)
         {
             Debug.Log("disparando");
-            if (!attacking)StartCoroutine(Attack(attackSpeed)) ;
+            if (!attacking)StartCoroutine(Attack(attackSpeed));
+           // anim.SetBool("Walking",-1,0);
+
         }
         else
         {
