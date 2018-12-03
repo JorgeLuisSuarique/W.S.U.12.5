@@ -10,6 +10,8 @@ public class Pausa : MonoBehaviour
     public GameObject OpcionPauce;
     public GameObject opciones;
     public static bool InputHabilitado = true;
+    public static bool isPause = true;
+
     public void PausarJuego()
     {
         if (Time.timeScale == 1.0F)
@@ -17,12 +19,14 @@ public class Pausa : MonoBehaviour
             InputHabilitado = false;
             PausarJ();
             Time.timeScale = 0.0F;
+            isPause = !isPause;
         }
         else
         {
             Time.timeScale = 1.0F;
             PanelJuego();
             InputHabilitado = true;
+            isPause = false; 
         }
     }
 

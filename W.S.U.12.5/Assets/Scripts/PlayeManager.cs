@@ -24,9 +24,16 @@ public class PlayeManager : MonoBehaviour
 
     void Update()
     {
-        anim.SetFloat("rolling", Mathf.Abs(rb2d.velocity.x));
-        anim.SetBool("Grounded", grounded);
-        Fire();
+        if(Pausa.isPause)
+        {
+            return;
+        }
+        else
+        {
+            anim.SetFloat("rolling", Mathf.Abs(rb2d.velocity.x));
+            anim.SetBool("Grounded", grounded);
+            Fire();
+        }
 	}
     public void Fire()
     {

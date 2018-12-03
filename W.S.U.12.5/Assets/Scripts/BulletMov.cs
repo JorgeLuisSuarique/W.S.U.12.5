@@ -30,6 +30,10 @@ public class BulletMov : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
         Destroy(gameObject, bullLife);
+        if (Pausa.isPause)
+        {
+            return;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coll)
