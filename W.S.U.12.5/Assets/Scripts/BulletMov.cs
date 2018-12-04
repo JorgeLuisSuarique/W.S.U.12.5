@@ -34,6 +34,10 @@ public class BulletMov : MonoBehaviour
         {
             return;
         }
+        if (Tutorial.isTutorial)
+        {
+            return;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coll)

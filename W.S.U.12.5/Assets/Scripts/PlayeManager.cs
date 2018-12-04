@@ -34,6 +34,10 @@ public class PlayeManager : MonoBehaviour
             anim.SetBool("Grounded", grounded);
             Fire();
         }
+        if (Tutorial.isTutorial)
+        {
+            return;
+        }
 	}
     public void Fire()
     {
@@ -70,6 +74,6 @@ public class PlayeManager : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        transform.position = new Vector2(-1, 1);
+        transform.position = new Vector2(1, 0);
     }
 }
