@@ -112,7 +112,14 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        TargetDetection();
+        if (Pausa.isPause)
+        {
+            return;
+        }
+        else
+        {
+          TargetDetection();
+        }
     }
 
     void OnDrawGizmosSelected()

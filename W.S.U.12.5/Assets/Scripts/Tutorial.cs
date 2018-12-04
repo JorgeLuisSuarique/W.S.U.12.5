@@ -15,13 +15,13 @@ public class Tutorial : MonoBehaviour
         {
             InputHabilitado = false;
             Time.timeScale = 0.0F;
-            isTutorial = !isTutorial;
+            isTutorial = true;
         }
         else
         {
             Time.timeScale = 1.0F;
             InputHabilitado = true;
-            isTutorial = false; 
+            isTutorial = false;
         }
     }
 

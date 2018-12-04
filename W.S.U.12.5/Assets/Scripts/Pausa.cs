@@ -9,8 +9,14 @@ public class Pausa : MonoBehaviour
     public GameObject PanelPausa;
     public GameObject OpcionPauce;
     public GameObject opciones;
+    public GameObject tutorial;
     public static bool InputHabilitado = true;
     public static bool isPause = true;
+
+    private void Start()
+    {
+        isPause = true;
+    }
 
     public void PausarJuego()
     {
@@ -49,6 +55,11 @@ public class Pausa : MonoBehaviour
     {
         OpcionPauce.SetActive(false);
         opciones.SetActive(false);
+    }
+    public void PanelTutorial()
+    {
+        tutorial.SetActive(false);
+        isPause = false;
     }
 
     public void MenuScene(string nombreScene)

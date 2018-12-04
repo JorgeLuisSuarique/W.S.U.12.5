@@ -34,14 +34,10 @@ public class PlayeManager : MonoBehaviour
             anim.SetBool("Grounded", grounded);
             Fire();
         }
-        if (Tutorial.isTutorial)
-        {
-            return;
-        }
 	}
     public void Fire()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(blasPrefab, blasterSpawner.position, blasterSpawner.rotation);
         }
@@ -56,20 +52,18 @@ public class PlayeManager : MonoBehaviour
             rb2d.velocity = fixVel;
         }
 
-        mov.x = Input.GetAxis("Horizontal");
-        if (!movement) mov.x = 0;
-        rb2d.AddForce(Vector2.right * speed * mov);
-        float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
-        rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
-
-        //if (mov.x > 0.1f)
-        //{
-        //    transform.localScale = new Vector3(1f, 1f, 1f);
-        //}
-        //if (mov.x < -0.1f)
-        //{
-        //    transform.localScale = new Vector3(-1f, 1f, 1f);
-        //}
+        if (Pausa.isPause)
+        {
+            return;
+        }
+        else
+        {
+            mov.x = Input.GetAxis("Horizontal");
+            if (!movement) mov.x = 0;
+            rb2d.AddForce(Vector2.right * speed * mov);
+            float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
+            rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+        }
     }
 
     void OnBecameInvisible()

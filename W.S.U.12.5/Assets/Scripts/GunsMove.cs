@@ -19,9 +19,5 @@ public class GunsMove : MonoBehaviour
             mouseY = Mathf.Clamp(mouseY, -45.0f, 45.0f);
             transform.eulerAngles = new Vector3(0, 0, mouseY);
         }
-        if (Tutorial.isTutorial)
-        {
-            return;
-        }
     }
 }
