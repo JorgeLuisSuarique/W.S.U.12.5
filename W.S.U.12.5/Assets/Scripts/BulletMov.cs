@@ -19,6 +19,11 @@ public class BulletMov : MonoBehaviour
 
     void Start()
     {
+        
+    }
+
+    void FixedUpdate()
+    {
         if (playTrans.localScale.x > 0)
         {
             bullRb2d.velocity = new Vector2(bullSpeed, bullRb2d.velocity.y);

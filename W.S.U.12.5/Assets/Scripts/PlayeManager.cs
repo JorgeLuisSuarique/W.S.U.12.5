@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayeManager : MonoBehaviour
 {
+    public static bool isMoving;
+
     public float maxSpeed = 5f;
     public float speed = 2f;
     public bool grounded;
@@ -54,6 +56,7 @@ public class PlayeManager : MonoBehaviour
 
         if (Pausa.isPause)
         {
+            
             return;
         }
         else
@@ -63,6 +66,14 @@ public class PlayeManager : MonoBehaviour
             rb2d.AddForce(Vector2.right * speed * mov);
             float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
             rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+
+            if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
+            {
+                isMoving = true;
+            }
+            else
+            { isMoving = false; }
+            Debug.Log(isMoving);
         }
     }
 

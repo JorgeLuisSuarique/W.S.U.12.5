@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullSpeed: 30
-  bullLife: 0.5
+  bullLife: 0.2
 --- !u!212 &212446258400104212
 SpriteRenderer:
   m_ObjectHideFlags: 1
