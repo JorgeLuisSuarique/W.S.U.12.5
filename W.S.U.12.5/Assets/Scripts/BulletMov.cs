@@ -9,6 +9,7 @@ public class BulletMov : MonoBehaviour
     private GameObject player;
     public float bullSpeed;
     public float bullLife;
+    public Transform mira;
 
     void Awake()
     {
@@ -19,21 +20,12 @@ public class BulletMov : MonoBehaviour
 
     void Start()
     {
-        
+        mira = GameObject.Find("Mira").transform;
+        bullRb2d.AddForce((mira.position - transform.position) * bullSpeed, ForceMode2D.Impulse);
     }
 
     void FixedUpdate()
     {
-        if (playTrans.localScale.x > 0)
-        {
-            bullRb2d.velocity = new Vector2(bullSpeed, bullRb2d.velocity.y);
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-        {
-            bullRb2d.velocity = new Vector2(-bullSpeed, bullRb2d.velocity.y);
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
         Destroy(gameObject, bullLife);
         if (Pausa.isPause)
         {

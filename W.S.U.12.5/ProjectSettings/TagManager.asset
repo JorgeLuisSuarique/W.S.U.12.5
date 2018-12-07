@@ -8,6 +8,8 @@ TagManager:
   - BlasterDestroy
   - Ground
   - Platform
+  - Kill
+  - Live
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,8 @@ public class PlayeManager : MonoBehaviour
     public bool grounded;
     public Transform blasterSpawner;
     public GameObject blasPrefab;
+    public Transform Spawnpoint;
+    public VidaPlayer1 vida;
 
     private Animator anim;
     private Rigidbody2D rb2d;
@@ -32,8 +34,9 @@ public class PlayeManager : MonoBehaviour
         }
         else
         {
+
             anim.SetFloat("rolling", Mathf.Abs(rb2d.velocity.x));
-            anim.SetBool("Grounded", grounded);
+            anim.SetBool("isMove", isMoving);
             Fire();
         }
 	}
@@ -41,7 +44,8 @@ public class PlayeManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(blasPrefab, blasterSpawner.position, blasterSpawner.rotation);
+            Instantiate(blasPrefab, blasterSpawner, false);
+
         }
     }
 
@@ -73,7 +77,18 @@ public class PlayeManager : MonoBehaviour
             }
             else
             { isMoving = false; }
-            Debug.Log(isMoving);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D go)
+    {
+        if (go.CompareTag("Kill"))
+        {
+            vida.Applyvida(150);
+        }
+        if (go.CompareTag("Live"))
+        {
+            vida.Applyvida(100);
         }
     }
 

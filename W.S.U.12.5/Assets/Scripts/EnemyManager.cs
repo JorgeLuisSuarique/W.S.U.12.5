@@ -20,6 +20,7 @@ public class EnemyManager : MonoBehaviour
     private Animator anim;
     Vector3 initialPosition, Enemy;
     GameObject player;
+
     void Start()
     {
         if (target != null)
@@ -28,13 +29,16 @@ public class EnemyManager : MonoBehaviour
             the = transform.position;
             end = target.position;
         }
+
         player = GameObject.FindGameObjectWithTag("Player");
+
         initialPosition = new Vector3
         {
             x = -62.3f,
             y = -3.27f,
             z = 0
-        }; //transform.position;
+        };
+
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -75,38 +79,40 @@ public class EnemyManager : MonoBehaviour
             if (hit2D.collider.tag == "Player")
             {
                 Enemy = player.transform.position;
+                Debug.Log("0");
             }
         }
 
-
         float dintance = Vector3.Distance(Enemy, transform.position);
         Vector3 direction = (Enemy - transform.position).normalized;
+
         if (Enemy != initialPosition && dintance < rangoDisparar)
         {
-            Debug.Log("disparando");
-            if (!attacking)StartCoroutine(Attack(attackSpeed));
-           // anim.SetBool("Walking",-1,0);
-
+            if (!attacking) StartCoroutine(Attack(attackSpeed));
+            Debug.Log("1");
         }
         else
         {
             rb2d.MovePosition(transform.position + direction * speed * Time.deltaTime);
+            Idle();
+            Debug.Log("2");
         }
 
-        if (Enemy == initialPosition && dintance < 0.02f)
-        {
-            if (transform.position == initialPosition)
-            {
-                Idle();
-                Debug.Log("Idle");
-            }
-            else
-            {
-                transform.position = initialPosition;
+        //if (Enemy == initialPosition && dintance < 0.02f)
+        //{
+        //    if (transform.position == initialPosition)
+        //    {
+        //        Idle();
+        //        Debug.Log("Idle");
+        //    }
+        //    else
+        //    {
+        //        transform.position = initialPosition;
 
-                Debug.Log("Init");
-            }
-        }
+        //        Debug.Log("Init");
+        //    }
+        //}
+
         Debug.DrawLine(transform.position, Enemy, Color.blue);
     }
 

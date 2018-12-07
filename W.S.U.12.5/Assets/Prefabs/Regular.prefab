@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1652491107232352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.413, y: -3.269, z: 0}
+  m_LocalPosition: {x: 354.2, y: -2.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274916055095458}
@@ -224,7 +224,7 @@ MonoBehaviour:
   end: {x: 0, y: 0, z: 0}
   bullPrefab: {fileID: 1459767042643450, guid: cbb6c71b688185a49845f283779ef88f, type: 2}
   bullSpawner: {fileID: 4794529206613050}
-  attackSpeed: 7
+  attackSpeed: 0.5
 --- !u!114 &114613256426821358
 MonoBehaviour:
   m_ObjectHideFlags: 1

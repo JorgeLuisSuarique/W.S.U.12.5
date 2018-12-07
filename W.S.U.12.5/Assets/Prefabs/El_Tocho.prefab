@@ -150,7 +150,7 @@ MonoBehaviour:
   rangoDisparar: 14
   bullPrefab: {fileID: 1459767042643450, guid: cbb6c71b688185a49845f283779ef88f, type: 2}
   bullSpawner: {fileID: 4610011550305256}
-  attackSpeed: 10
+  attackSpeed: 0.2
 --- !u!212 &212035455618652440
 SpriteRenderer:
   m_ObjectHideFlags: 1
