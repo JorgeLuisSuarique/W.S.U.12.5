@@ -108,9 +108,9 @@ public class EnFinal : MonoBehaviour
             live.Applyvida(150);
         }
 
-        if (live.Applyvida <= 0)
+        if (live.vida <= 0)
         {
-            
+            Destroy(gameObject);
         }
         
     }

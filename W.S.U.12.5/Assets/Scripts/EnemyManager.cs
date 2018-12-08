@@ -89,29 +89,13 @@ public class EnemyManager : MonoBehaviour
         if (Enemy != initialPosition && dintance < rangoDisparar)
         {
             if (!attacking) StartCoroutine(Attack(attackSpeed));
-            Debug.Log("1");
         }
         else
         {
             rb2d.MovePosition(transform.position + direction * speed * Time.deltaTime);
             Idle();
-            Debug.Log("2");
         }
-
-        //if (Enemy == initialPosition && dintance < 0.02f)
-        //{
-        //    if (transform.position == initialPosition)
-        //    {
-        //        Idle();
-        //        Debug.Log("Idle");
-        //    }
-        //    else
-        //    {
-        //        transform.position = initialPosition;
-
-        //        Debug.Log("Init");
-        //    }
-        //}
+        
 
         Debug.DrawLine(transform.position, Enemy, Color.blue);
     }

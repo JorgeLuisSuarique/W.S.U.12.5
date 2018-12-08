@@ -36,7 +36,6 @@ public class Enemy2 : MonoBehaviour
         Vector3 direction = (Enemy - transform.position).normalized;
         if (Enemy != initialPosition && dintance < rangoDisparar)
         {
-            Debug.Log("disparando");
             if (!attacking) StartCoroutine(Attack(attackSpeed));
         }
         if (Enemy == initialPosition && dintance < 0.02f)

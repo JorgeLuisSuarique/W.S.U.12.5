@@ -26,7 +26,6 @@ public class Bomba : MonoBehaviour
         if (coll.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Debug.Log("muero");
         }
     }
 }
