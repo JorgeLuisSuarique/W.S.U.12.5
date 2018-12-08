@@ -9,7 +9,15 @@ public class EnFinal : MonoBehaviour
     public Vector3 the, end;
     public Transform target;
     public LiveEnemy live;
+    public float rangoDisparar;
+    public GameObject bullPrefab;
+    public Transform bullSpawner;
+    public float attackSpeed = 1f;
+
     private Rigidbody2D rb2d;
+    GameObject player;
+    Vector3 initialPosition, Enemy;
+    bool attacking;
 
 
     void Start()
@@ -20,6 +28,8 @@ public class EnFinal : MonoBehaviour
             the = transform.position;
             end = target.position;
         }
+        initialPosition = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
         rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -32,9 +42,32 @@ public class EnFinal : MonoBehaviour
         else
         {
           Idle();
+          TargetDetection();
         }
     }
 
+    void TargetDetection()
+    {
+        Enemy = initialPosition;
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, player.transform.position - transform.position, rangoDisparar);
+        Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
+        Debug.DrawRay(transform.position, forward, Color.red);
+        if (hit2D.collider != null)
+        {
+            Enemy = player.transform.position;
+        }
+        float dintance = Vector3.Distance(Enemy, transform.position);
+        Vector3 direction = (Enemy - transform.position).normalized;
+        if (Enemy != initialPosition && dintance < rangoDisparar)
+        {
+            if (!attacking) StartCoroutine(Attack(attackSpeed));
+        }
+        if (Enemy == initialPosition && dintance < 0.02f)
+        {
+            transform.position = initialPosition;
+        }
+        Debug.DrawLine(transform.position, Enemy, Color.green);
+    }
     void Idle()
     {
         if (isRight)
@@ -57,12 +90,34 @@ public class EnFinal : MonoBehaviour
         }
     }
 
+    IEnumerator Attack(float seconds)
+    {
+        attacking = true;
+        if (bullPrefab != null)
+        {
+            Instantiate(bullPrefab, bullSpawner.position, bullSpawner.rotation);
+            yield return new WaitForSeconds(seconds);
+        }
+        attacking = false;
+    }
+
     void OnTriggerEnter2D(Collider2D go)
     {
         if (go.CompareTag("BlasterDestroy"))
         {
             live.Applyvida(150);
         }
+
+        if (live.Applyvida <= 0)
+        {
+            
+        }
         
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, rangoDisparar);
     }
 }

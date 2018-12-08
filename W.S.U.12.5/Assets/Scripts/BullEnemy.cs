@@ -5,6 +5,7 @@ using UnityEngine;
 public class BullEnemy : MonoBehaviour
 {
     public float speed;
+    public float bullLife;
 
     GameObject player;
     Rigidbody2D rb2d;
@@ -22,6 +23,7 @@ public class BullEnemy : MonoBehaviour
 	
 	void FixedUpdate ()
     {
+        Destroy(gameObject, bullLife);
         if (targ != Vector3.zero)
         {
             rb2d.MovePosition(transform.position + (dir * speed) * Time.deltaTime);
@@ -35,10 +37,5 @@ public class BullEnemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
     }
 }
